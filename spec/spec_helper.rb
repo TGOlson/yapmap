@@ -11,6 +11,8 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'shoulda-matchers'
 require 'rack/test'
 
+#Add requires for other testing libraries here. 
+
 RSpec.configure do |config|
   config.include Rack::Test::Methods
 end
