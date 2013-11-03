@@ -2,9 +2,8 @@ enable :sessions
 
 get '/' do
   session[:current_ip] = request.ip
+  @current_viewer = create_viewer
   @viewers    = Viewer.all.map{|v| [v.latitude, v.longitude] }
-  # @current_viewer = create_viewer
-  # erb :map_form
   erb :layout
 end
 
