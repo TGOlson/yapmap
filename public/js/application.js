@@ -7,34 +7,33 @@ $(document).ready(function() {
 
 });
 
-  function initialize(locations) {
-    var mapOptions = {
-      center: new google.maps.LatLng(-34.397, 150.644),
-      zoom: 5,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map-canvas"),
-      mapOptions);
+function initialize(locations) {
+	var mapOptions = {
+		center: new google.maps.LatLng(30, 0), // hard-coded to center well
+		zoom: 2,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map-canvas"),
+		mapOptions);
 
-    // var locations = [[-35.363882,131.044922]]; //test data
-
-    for (var i = 0; i < locations.length; i++) {
- 	  var spot = locations[i];
-      addMarker(map, spot);
+	for (var i = 0; i < locations.length; i++) {
+		var spot = locations[i];
+		addMarker(map, spot);
       // alertTest(spot, i);
-    }
   }
+}
 
-  function addMarker(map, spot) {
-    var myLatlng = new google.maps.LatLng(spot[0], spot[1]);
 
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title:"Hello World!"
-    }); 	
-  }
+function addMarker(map, spot) {
+	var myLatlng = new google.maps.LatLng(spot[0], spot[1]);
 
-  function alertTest(spot, i) {
-  	alert("Spot " + i + "\n\n-Latitude:  " + spot[0] + "\n-Longitude: " + spot[1]);
-  }
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title:"Hello World!"
+	}); 	
+}
+
+function alertTest(spot, i) {
+	alert("Spot " + i + "\n\n-Latitude:  " + spot[0] + "\n-Longitude: " + spot[1]);
+}
