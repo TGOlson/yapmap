@@ -8,3 +8,9 @@
 * Uses [Google Maps API v3](https://developers.google.com/maps/documentation/javascript/) for mapping servies
 
 * Goal is to have a blank page covered in colorful dots, that will eventually fill in the map.
+
+* See [YAP](http://yapmap.herokuapp.com/) live... but don't be too harsh, still collecting data and testing
+
+* Please send feedback, or issue a pull request to lend a hand
+
+* Name is different in at least 3 different place, so take that as a sign too.
