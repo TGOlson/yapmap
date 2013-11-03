@@ -1,3 +1,5 @@
+require 'faker'
+
 class CreateViewers
 	def self.populate!
 		5.times do

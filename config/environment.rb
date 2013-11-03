@@ -17,8 +17,6 @@ require 'logger'
 
 require 'geocoder'
 
-require 'faker'
-
 require 'sinatra'
 require "sinatra/reloader" if development?
 

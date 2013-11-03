@@ -19,6 +19,7 @@ gem 'shotgun'
 
 gem 'geocoder'
 
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
