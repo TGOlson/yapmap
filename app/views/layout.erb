@@ -10,32 +10,20 @@
   <script src="/js/application.js"></script>
 
   <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpq53jAOq2gIMftc3RmPivv7ocB7fk7Fg&sensor=false">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpq53jAOq2gIMftc3RmPivv7ocB7fk7Fg&sensor=false">
   </script>
 
-  <script type="text/javascript">
-      google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
-
-<script type="text/javascript"> 
-  window.onload = function() {
-  <% @viewers.each do |v| %>
-    addmarker(<%= v.latitude %>, <%= v.longitude %>);
-  <% end %> }
-</script>
 
 
 
-  <title></title>
+
+<title></title>
 </head>
 
-<body>
+<body onload="initialize();">
 
-<body>
+    <div id="map-canvas"/>
 
+  </body>
 
-  <div id="map-canvas"/>
-
-</body>
-
-</html>
+  </html>
