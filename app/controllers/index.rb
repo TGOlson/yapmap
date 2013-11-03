@@ -21,3 +21,8 @@ end
 #  "current_ip"=>"127.0.0.1", "csrf"=>"22fe34862e301103b06c480e13e30cb5"}
 
 # add session id to table? so can do -> unless session_id?
+
+
+### flash notice about being added? location? option for note?
+# ajax to make no-refresh?
+# load a google make so don't need to make new map every time?
