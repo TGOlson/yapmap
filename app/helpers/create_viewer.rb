@@ -1,4 +1,4 @@
-require 'faker' #=> test only
+# require 'faker' #=> test only
 
 helpers do
 
