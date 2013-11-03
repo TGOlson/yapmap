@@ -9,13 +9,13 @@
 
 * Goal is to have a blank page covered in colorful dots, that will eventually fill in the map.
 
-** Currently map is light grey for development, eventually map will be all-white.
+    * Currently map is light grey for development, eventually map will be all-white.
 
 * See [YAP](http://yapmap.herokuapp.com/) live... but don't be too harsh, still collecting data and testing
 
 * Please send feedback, or issue a pull request to lend a hand
 
-* Name is different in at least 3 different place, so take that as a sign too.
+    * Name is different in at least 3 different place, so take that as a sign too.
 
 * Uses sessions to track current user ips - will not add same ip twice
 
