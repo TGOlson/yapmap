@@ -23,7 +23,7 @@ var MY_MAPTYPE_ID = 'custom_style';
     {
       elementType: 'land',
       stylers: [
-        { color: '#f5f5f5' },
+        { color: '#f3f3f3' },
       ]
     },
     {
