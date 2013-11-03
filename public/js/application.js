@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 });
 
-  function initialize() {
+  function initialize(locations) {
     var mapOptions = {
       center: new google.maps.LatLng(-34.397, 150.644),
       zoom: 5,
@@ -16,7 +16,7 @@ $(document).ready(function() {
     var map = new google.maps.Map(document.getElementById("map-canvas"),
       mapOptions);
 
-    var locations = [[-35.363882,131.044922]];
+    // var locations = [[-35.363882,131.044922]]; //test data
 
     for (var i = 0; i < locations.length; i++) {
  	  var spot = locations[i];
