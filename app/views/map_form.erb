@@ -1,0 +1,10 @@
+<div class="viewer-container">
+
+	<% @all_viewers.each do |viewer| %>
+	    <%= [viewer.ip_address, viewer.city, 
+		     viewer.region_name, viewer.zipcode,
+		     viewer.country, viewer.dot_color,
+		     viewer.latitude, viewer.longitude].join(', ') + ' | ' %>
+	<% end %>
+
+</div>

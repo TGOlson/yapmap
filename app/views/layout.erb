@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpq53jAOq2gIMftc3RmPivv7ocB7fk7Fg&sensor=false">
+  </script>
+
+  <script type="text/javascript">
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+<script type="text/javascript"> 
+  window.onload = function() {
+  <% @viewers.each do |v| %>
+    addmarker(<%= v.latitude %>, <%= v.longitude %>);
+  <% end %> }
+</script>
+
+
+
   <title></title>
 </head>
+
 <body>
 
-  <nav>
+<body>
 
-    <div class="brand"><a href="/">User Authentication</a></div>
 
-    <ul>
-      <!-- TODO: Implement Sign_Out. Render a delete form in a partial if there is a current user -->
-        <li><a href="/sessions/new">Sign In</a></li>
-        <li><a href="/users/new">Sign Up</a></li>
-      </ul>
+  <div id="map-canvas"/>
 
-  </nav>
-
-  <%= yield %>
 </body>
+
 </html>
