@@ -15,7 +15,8 @@ function initialize(locations) {
 	{
 		elementType: 'land',
 		stylers: [
-		{ color: '#f3f3f3' },
+        { color: '#ffffff' },
+		// { color: '#f3f3f3' }, // test setting
 		]
 	},
 	{
