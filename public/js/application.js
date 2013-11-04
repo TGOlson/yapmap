@@ -13,14 +13,6 @@ function initialize(locations) {
 
 	var featureOpts = [
 	{
-		stylers: [
-		{ hue: '#fff' },
-		{ visibility: 'simplified' },
-		{ gamma: 0.0 },
-		{ weight: 1.0 }
-		]
-	},
-	{
 		elementType: 'land',
 		stylers: [
 		{ color: '#f3f3f3' },
@@ -79,7 +71,8 @@ function addMarker(map, spot) {
 	var marker = new google.maps.Marker({
 		position: myLatlng,
 		map: map,
-		icon: 'http://maps.google.com/mapfiles/ms/icons/' + spot[4] + '-dot.png',
+        // icon: 'http://maps.google.com/mapfiles/ms/icons/' + spot[4] + '-dot.png',
+		icon: '../img/' + spot[4] + '.png',
 		title: spot[2] + " - " + spot[3]
 	}); 	
 }
