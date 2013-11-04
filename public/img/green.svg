@@ -14,10 +14,10 @@
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   inkscape:export-filename="/home/tyler/ruby/dev_challenges/yap/public/img/green.png"
+   inkscape:export-filename="/home/tyler/ruby/dev_challenges/yap/public/img/blue.png"
    inkscape:export-xdpi="102.92275"
    inkscape:export-ydpi="102.92275"
-   sodipodi:docname="green.png">
+   sodipodi:docname="green.svg">
   <defs
      id="defs2987" />
   <sodipodi:namedview
@@ -57,13 +57,16 @@
      transform="translate(0,-1045.3622)">
     <path
        sodipodi:type="arc"
-       style="fill:#0fff00;fill-opacity:1;stroke:#00e100;stroke-width:1.09043968;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#ff5019;fill-opacity:1;stroke:#ff2819;stroke-width:1.09043968000000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path2993"
        sodipodi:cx="3.609375"
        sodipodi:cy="3.5"
        sodipodi:rx="3.203125"
        sodipodi:ry="3.34375"
        d="m 6.8125,3.5 a 3.203125,3.34375 0 1 1 -6.40625,0 3.203125,3.34375 0 1 1 6.40625,0 z"
-       transform="matrix(0.9366411,0,0,0.89724965,0.11931103,1045.7218)" />
+       transform="matrix(0.9366411,0,0,0.89724965,0.11931103,1045.7218)"
+       inkscape:export-filename="/home/tyler/ruby/dev_challenges/yap/public/img/red.png"
+       inkscape:export-xdpi="102.92275"
+       inkscape:export-ydpi="102.92275" />
   </g>
 </svg>
