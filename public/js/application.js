@@ -1,10 +1,9 @@
-$(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+$(document).ready(function(){
+  $("#info-button").click(function(){
+    // $("#info-panel").slideToggle("slow");
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
-
+    $("#info-panel").animate({width: 'toggle', duration: 100});
+  });
 });
 
 function initialize(locations) {
@@ -30,12 +29,12 @@ function initialize(locations) {
 	var mapOptions = {
         center: new google.maps.LatLng(39.5,-96), // hard-coded to center
         zoom: 5,
-        // ui control
+        // ui controls
         panControl: false,
         zoomControl: true,
         zoomControlOptions: {
         	style: google.maps.ZoomControlStyle.SMALL,
-        	position: google.maps.ControlPosition.RIGHT_BOTTOM
+        	position: google.maps.ControlPosition.LEFT_BOTTOM
 
         },
         mapTypeControl: false,

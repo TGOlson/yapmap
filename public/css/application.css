@@ -1,15 +1,45 @@
+/*Google Map Canvas Settings*/
+
 html { height: 100% }
-body { height: 100%; margin: 0; padding: 0 }
+body { height: 100%; margin: 0px; padding: 0px }
 
-.viewer-container {
-	width: 100%;
-	position: absolute;
-    bottom: 0px;
-    background-color: #888;
-    color: #fff;
-    font-size: 10px;
+#map-canvas { 
+	position: absolute; 
+	top: 0px; left: 0px; 
+	height: 100%; width: 100%;
 }
 
-#map-canvas {
-	height: 100%;
+/*Extra Information Div*/
+
+#info-button { 
+	position: absolute; 
+	bottom: 2%; right: 2%; 
+	z-index: 99; 
+	color: #0096ff;
+	font-size: 30px;
+	cursor: pointer;
+	opacity: 0.8; 
 }
+
+#info-panel {
+	display: none;
+	position: absolute; 
+    right: 0px; bottom: 10%; 
+    height: 2em;
+	background-color: #0096ff; 
+	z-index: 99; 
+	opacity: 0.8;
+	border-radius: 1em 0em 0em 1em;	
+}
+
+#info-panel p {
+	margin: 7px 10px 0px 15px;
+	font-size: 0.85em;
+	font-weight: thin;
+	color: #fff;
+}
+
+#info-panel i {
+	font-size: 1em;
+}
+

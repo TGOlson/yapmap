@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>yapmap | aiming to recreating the world with dots</title>
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
@@ -20,6 +21,9 @@
 
   </script>
 
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+
   <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpq53jAOq2gIMftc3RmPivv7ocB7fk7Fg&sensor=false">
   </script>
@@ -30,12 +34,20 @@
   }
 </script>
 
-  <title>YAAAAAAP!</title>
 </head>
 
 <body onload='run();'>
 
-  <div id="map-canvas"/>
+
+<div id="wrapper">
+  <div id="map-canvas"></div>
+  <div id="info-button">
+    <i class="fa fa-question-circle"></i>
+  </div>
+  <div id="info-panel">
+    <p>aiming to recreating the world with dots - all visitors are anonymous added to the map as a randomly colored dot - by <a href="http://tgolson.com" target="_blank">tyler olson</a> - project on <a href="https://github.com/TGOlson/YAP" target="_blank">github</a></p>
+  </div>
+</div>
 
 </body>
 
