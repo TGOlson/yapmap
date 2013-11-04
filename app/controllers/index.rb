@@ -1,9 +1,17 @@
 enable :sessions
 
 get '/' do
-  p Viewer.where('ip_address = ?', request.ip)	
-  create_viewer if session[:current_ip].nil? # create new viewer profile if none exists
-  @viewers = Viewer.all.map{|v| [v.latitude, v.longitude, v.city, v.region_name, v.dot_color] }
+  session[:ip] = request.ip
+  v = Viewer.where('ip_address = ?', session[:ip])
+  if v.empty?
+    create_viewer # create new viewer profile if none exists
+  else
+    v.first.visits += 1
+    v.first.save
+  end 
+  @viewers = Viewer.all.map{|v| [v.latitude, v.longitude, 
+  	                             v.city,     v.region_name, 
+  	                             v.dot_color] }
   erb :layout
 end
 

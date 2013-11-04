@@ -5,7 +5,6 @@ helpers do
   COLORS = ['red', 'green', 'blue']
 
   def create_viewer
-    session[:current_ip] = request.ip
     g = ip_to_location
 
     v = Viewer.new  ip_address:  g['ip'],
@@ -26,7 +25,7 @@ helpers do
   end
 
   def ip_to_location
-		Geocoder.search(session[:current_ip]).first.data
+		Geocoder.search(session[:ip]).first.data
     # Geocoder.search(Faker::Internet.ip_v4_address).first.data #=> test setting
 end
 
